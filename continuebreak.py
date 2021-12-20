@@ -1,6 +1,6 @@
 absent = [2, 5]
 no_book = [7]
-for student in range(1, 11): #1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+for student in range(1, 11):  # 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
     if student in absent:
         continue
     elif student in no_book:

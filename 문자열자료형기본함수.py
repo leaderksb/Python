@@ -5,7 +5,7 @@ z = a.zfill(20)  # 특정 길이가 되도록 문자열 앞을 0으로 채움
 num1 = "9000"
 num2 = int(num1)
 
-print(a.count('L'))
+print(a.count('L'))  # 해당 문자가 몇번 등장하는가
 print(a.find("WOR"))  # 원하는 문자열 찾기, 없을 시 -1 반환
 print(a.lower())  # 소문자
 print(a.upper())  # 대문자

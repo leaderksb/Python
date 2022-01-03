@@ -8,3 +8,6 @@ print(menu, type(menu))
 
 menu = tuple(menu)
 print(menu, type(menu))
+
+menu = set(menu)
+print(menu, type(menu))

@@ -19,13 +19,13 @@ attack(tank_name, "1시", tank_damage)
 
 # 클래스 : 내용물을 만들낼 수 있는 틀 또는 설계도
 class Unit:
-    def __init__(self, name, hp, damage):
+    def __init__(self, name, hp, damage):  # 생성자
         self.name = name
         self.hp = hp
         self.damage = damage
         print("{0} 유닛이 생성되었습니다. ".format(self.name))
         print("{0} 체력 : {1}\n{0} 공격력 : {2}".format(self.name, self.hp, self.damage))
 
-marine1 = Unit("마린", 40, 5)
+marine1 = Unit("마린", 40, 5)  # 생성자 호출 시 self를 제외한 매개변수 개수와 일치
 marine2 = Unit("마린", 40, 5)
 tank = Unit("탱크", 150, 35)

@@ -9,3 +9,15 @@ with open("study.txt", "w", encoding="utf8") as study_file:
 
 with open("study.txt", "r", encoding="utf8") as study_file:
     print(study_file.read())
+
+# 1~50주차까지 기본 포맷이 설정돼 있는 보고서 파일 생성
+for i in range(1, 51):
+    with open("{0}주차.txt".format(i), "w", encoding="utf8") as q_file:
+        q_file.write("- {0}주차 주간보고 -\n".format(i))
+        q_file.write("부서 : \n")
+        q_file.write("이름 : \n")
+        q_file.write("업무 요약 : \n")
+
+for i in range(1, 51):
+    with open("{0}주차.txt".format(i), "r", encoding="utf8") as q_file:
+        print(q_file.read())

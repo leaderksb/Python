@@ -29,3 +29,14 @@ class Unit:
 marine1 = Unit("마린", 40, 5)  # 생성자 호출 시 self를 제외한 매개변수 개수와 일치
 marine2 = Unit("마린", 40, 5)
 tank = Unit("탱크", 150, 35)
+
+# 레이스 : 공중 유닛, 비행기, 클로킹 (상대방에게 보이지 않음)
+wraith1 = Unit("레이스", 80, 5)
+print("유닛 이름 : {0}\n공격력 : {1}".format(wraith1.name, wraith1.damage))
+
+# 마인드 컨트롤 : 상대방 유닛을 내 것으로 만드는 것 (강탈)
+wraith2 = Unit("레이스", 80, 5)
+wraith2.clocking = True  # 외부에서 멤버 변수 추가
+
+if wraith2.clocking == True:
+    print("{0}는 현재 클로킹 상태입니다.".format(wraith2.name))

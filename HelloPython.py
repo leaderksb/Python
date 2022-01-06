@@ -8,3 +8,7 @@ print(c[0])
 print(c[-3])
 print(c[2:9])
 print(c[1:])
+
+import byme
+
+byme.sign()

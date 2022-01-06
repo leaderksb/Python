@@ -13,7 +13,7 @@ try:
     num1 = int(input("첫번째 수 >> "))
     num2 = int(input("두번째 수 >> "))
 
-    if num1 >= 10 or num2 >=10:
+    if num1 >= 10 or num2 >= 10:
         # raise ValueError  # 에러 발생
         raise BigNumberError("입력값 : {0}, {1}".format(num1, num2))  # 사용자가 정의한 에러 호출
 

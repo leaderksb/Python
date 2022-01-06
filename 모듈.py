@@ -17,3 +17,16 @@ price_soldier(5)
 from theater_module import price, price_morning  # 모듈 내 필요한 부분만 사용
 price(5)
 price_morning(4)
+
+# 패키지를 *로 전부 불러오기 위해서는 __init__ 파일에서 정의 필요
+from travel import *
+trip_to = vietnam.VietnamPackage()
+trip_to = thailand.ThailandPackage()
+trip_to.detail()
+
+import inspect
+import random
+
+print(inspect.getfile(random))  # 모듈 위치 확인
+print(inspect.getfile(thailand))
+print(inspect.getfile())

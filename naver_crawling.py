@@ -14,6 +14,6 @@ soup = BeautifulSoup(html, 'html.parser')
 title = soup.find_all(class_='sh_blog_title')
 
 for i in title:
-    print(i.attrs['title']) # 속성을 찾음
+    print(i.attrs['title'])  # 속성을 찾음
     print(i.attrs['href'])
     print()
